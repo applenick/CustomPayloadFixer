@@ -99,8 +99,8 @@ public class CustomPayloadFixer extends JavaPlugin {
         if (player == null) {
             // Oh! Packet without player o_O. We can't do anything
             String name = event.getPacket().getStrings().readSafely(0);
-            getLogger().log(Level.SEVERE, "packet '{0}' without player ", name);
-            if (logger != null) logger.log(Level.SEVERE, "packet '{0}' without player ", name);
+            getLogger().log(Level.SEVERE, "packet ''{0}'' without player ", name);
+            if (logger != null) logger.log(Level.SEVERE, "packet ''{0}'' without player ", name);
             event.setCancelled(true);
             return;
         }
